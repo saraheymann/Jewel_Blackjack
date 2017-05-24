@@ -1,0 +1,31 @@
+.valueBox{
+	height: 200px;
+	width: 200px;
+	background-color: pink;
+	float: left;
+}
+.badge{
+	width: 100px;
+	height: 200px;
+	background-color: teal;
+	margin-left: 210px;
+}
+button{
+	margin-top: 10px; 
+}
+img{
+	clear: both;
+	width: 100px;
+	height:200px;
+}
+h2{
+	height: 25px;
+	width: 200px;
+	background-color: purple;
+	color: white;
+}
+.totalScore{
+	height: 200px;
+	width: 300px;
+	background-color: green;
+}
