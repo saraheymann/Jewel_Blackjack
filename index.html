@@ -3,10 +3,7 @@
 <head>
 	<title>Crystals Collector</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.slim.js"
-  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
-  crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <h1>Crystals Collector!</h1>
@@ -21,23 +18,26 @@ The value of each crystal is hidden to you until you click on it.
 <br>
 each time when the game starts, the game will change the values of each crystal.
 </p>
-<div class="valueBox">
+<div id="valueBox">
 	<!-- this div is for the value of the crystals -->
 </div>
-<div class="badge" id="wins" id="losses">
-	<!-- this div is for the wins and losses -->
+<div class="badge">
+
+<p id="wins">Wins:</p>
+<p id="losses">Losses:</p>
+
 </div>
 <button>
-	<img src="assets/images/crystal1.jpg">
+	<img id="crystalOneId" src="assets/images/crystal1.jpg">
 </button>
 <button>
-	<img src="assets/images/crystal2.jpg">
+	<img id="crystalTwoId" src="assets/images/crystal2.jpg">
 </button>
 <button>
-	<img src="assets/images/crystal3.jpg">
+	<img id="crystalThreeId" src="assets/images/crystal3.jpg">
 </button>
 <button>
-	<img src="assets/images/crystal4.jpg">
+	<img id="crystalFourId" src="assets/images/crystal4.jpg">
 </button>
 	<!-- the buttons are for the crystals -->
 
@@ -47,4 +47,5 @@ each time when the game starts, the game will change the values of each crystal.
 </div>
 
 </body>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>

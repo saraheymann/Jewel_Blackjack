@@ -1,8 +1,9 @@
-.valueBox{
+#valueBox{
 	height: 200px;
 	width: 200px;
 	background-color: pink;
 	float: left;
+	font-size: 50px;
 }
 .badge{
 	width: 100px;
@@ -28,4 +29,5 @@ h2{
 	height: 200px;
 	width: 300px;
 	background-color: green;
+	font-size: 40px;
 }
