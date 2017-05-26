@@ -1,14 +1,27 @@
+body{
+	/*background-image: url(https://media0.giphy.com/media/8vYWtRIBevuw0/giphy.gif);
+	background-size: 100%;*/
+}
+
+.rules{
+	text-align: left;
+	font-size: 20px;
+	font-style: bold;
+	background-color: aquamarine;
+}
 #valueBox{
 	height: 200px;
 	width: 200px;
 	background-color: pink;
 	float: left;
 	font-size: 50px;
+	
 }
 .badge{
-	width: 100px;
+	width: 200px;
 	height: 200px;
 	background-color: teal;
+	font-size: 20px;
 	margin-left: 210px;
 }
 button{
@@ -26,8 +39,8 @@ h2{
 	color: white;
 }
 .totalScore{
-	height: 200px;
-	width: 300px;
+	height: 75px;
+	width: 200px;
 	background-color: green;
 	font-size: 40px;
 }

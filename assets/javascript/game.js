@@ -21,29 +21,72 @@ $("#crystalTwoId").html(crystalTwo);
 $("#crystalThreeId").html(crystalThree);
 $("#crystalFourId").html(crystalFour);
 
+// reset
+function reset(){
+	var userTotalScore = 0;
+	var valueNumber = Math.floor(Math.random() * 102)+ 19;
+	var crystalOne = Math.floor(Math.random() * 12)+ 1;
+	var crystalTwo = Math.floor(Math.random() * 12)+ 1;
+	var crystalThree = Math.floor(Math.random() * 12)+ 1;
+	var crystalFour = Math.floor(Math.random() * 12)+ 1;
+}
+
 // when the crystal buttons are clicked, add them to total score
 
 $("#crystalOneId").click(function addCrystalOne(){
-	userTotalScore = newScore + crystalOne;
+	userTotalScore = userTotalScore + crystalOne;
 	$(".totalScore").text(userTotalScore);
+	if(userTotalScore === valueNumber){
+	reset();
+	wins++;
+	$("#wins").text('Wins: '+ wins);
+	
+}else if(userTotalScore > valueNumber){
+	reset();
+	losses++;
+	$("#losses").text('Losses: '+ losses);
+	
+}
 })
-
 $("#crystalTwoId").click(function addCrystalTwo(){
-	userTotalScore = newScore + crystalTwo;
+	 userTotalScore = userTotalScore + crystalTwo;
 	$(".totalScore").text(userTotalScore);
+	if(userTotalScore === valueNumber){
+	reset();
+	wins++;
+	$("#wins").text('Wins: '+ wins);
+}else if (userTotalScore > valueNumber){
+	reset();
+	losses++;
+	$("#losses").text('Losses: '+ losses);
+}
 })
-
-// I need the new score to hold all the values of the different crystals when they are clicked.
-// do I push the answers to an array and then add them together?
-
-// if(userTotalScore === valueNumber){
-// 	wins++;
-// 	reset();
-// }else (userTotalScore >= valueNumber){
-// 	losses++;
-// 	reset();
-// }
-
+$("#crystalThreeId").click(function addCrystalThree(){
+	 userTotalScore = userTotalScore + crystalTwo;
+	$(".totalScore").text(userTotalScore);
+	if(userTotalScore === valueNumber){
+	wins++;
+	$("#wins").text('Wins: '+ wins);
+	reset();
+}else if (userTotalScore > valueNumber){
+	losses++;
+	$("#losses").text('Losses: '+ losses);
+	reset();
+}
+})
+$("#crystalFourId").click(function addCrystalFour(){
+	 userTotalScore = userTotalScore + crystalTwo;
+	$(".totalScore").text(userTotalScore);
+	if(userTotalScore === valueNumber){
+	wins++;
+	$("#wins").text('Wins: '+ wins);
+	reset();
+}else if (userTotalScore > valueNumber){
+	losses++;
+	$("#losses").text('Losses: '+ losses);
+	reset();
+}
+})
 };
 
 
