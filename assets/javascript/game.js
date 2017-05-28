@@ -45,7 +45,7 @@ function loseGame(){
 	reset();
 }
 // when the crystal buttons are clicked, add them to total score
-$("#crystalOneId").click(function addCrystalOne(){
+$("#crystalOneId").on('click', function addCrystalOne(){
 	userTotalScore = userTotalScore + crystalOne;
 	$("#totalScoreId").text(userTotalScore);
 	
@@ -56,7 +56,7 @@ $("#crystalOneId").click(function addCrystalOne(){
 	loseGame();
 }
 })
-$("#crystalTwoId").click(function addCrystalTwo(){
+$("#crystalTwoId").on('click', function addCrystalTwo(){
 	 userTotalScore = userTotalScore + crystalTwo;
 	$("#totalScoreId").text(userTotalScore);
 	
@@ -67,7 +67,7 @@ $("#crystalTwoId").click(function addCrystalTwo(){
 	loseGame();
 }
 })
-$("#crystalThreeId").click(function addCrystalThree(){
+$("#crystalThreeId").on('click', function addCrystalThree(){
 	 userTotalScore = userTotalScore + crystalThree;
 	$("#totalScoreId").text(userTotalScore);
 	
@@ -78,7 +78,7 @@ $("#crystalThreeId").click(function addCrystalThree(){
 	loseGame();
 }
 })
-$("#crystalFourId").click(function addCrystalFour(){
+$("#crystalFourId").on('click', function addCrystalFour(){
 	 userTotalScore = userTotalScore + crystalFour;
 	$("#totalScoreId").text(userTotalScore);
 	
